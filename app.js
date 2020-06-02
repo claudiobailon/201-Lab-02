@@ -77,7 +77,7 @@ if (gamesAnswer === 'yes' || gamesAnswer === 'y' || gamesAnswer === 'yeah'){
 var daysHaircutAnswer = prompt('How long (in days) has it been since Matt last had a harciut (usually I get a haircut every 28 days)?');
 daysHaircutAnswer = parseInt(daysHaircutAnswer);
 if (daysHaircutAnswer === 85){
-  alert('Yes! How\'d you guess? It\'s been far too long!')
+  alert('Yes! How\'d you guess? It\'s been far too long!');
   // console.log('Yes! How\'d you guess? It\'s been far too long!');
 } else if (daysHaircutAnswer < 85){
   alert('I wish! Longer!');
@@ -90,13 +90,13 @@ if (daysHaircutAnswer === 85){
 var seasonPreferenceAnswer = prompt('Does Matt prefer Summer, Winter, Fall, or Spring?');
 seasonPreferenceAnswer = seasonPreferenceAnswer.toLowerCase();
 if (seasonPreferenceAnswer === 'summer'){
-  alert('Yes! But usually by the end of it I\'m excited for Fall. I hope you enjoy the Fall, too, ' + askNameAnswer + '!')
+  alert('Yes! But usually by the end of it I\'m excited for Fall. I hope you enjoy the Fall, too, ' + askNameAnswer + '!');
   // console.log('Yes! But usually by the end of it I\'m excited for Fall. I hope you enjoy the Fall, too, ' + askNameAnswer + '!');
 } else if (seasonPreferenceAnswer === 'fall'){
-  alert('Yes! But usually by the end of it I\'m excited for Winter. I hope you enjoy the Winter, too, ' + askNameAnswer + '!')
+  alert('Yes! But usually by the end of it I\'m excited for Winter. I hope you enjoy the Winter, too, ' + askNameAnswer + '!');
   // console.log('Yes! But usually by the end of it I\'m excited for Winter. I hope you enjoy the Winter, too, ' + askNameAnswer + '!');
 } else if (seasonPreferenceAnswer === 'winter'){
-  alert('Yes! But usually by the end of it I\'m excited for Spring. I hope you enjoy the Spring, too, ' + askNameAnswer + '!')
+  alert('Yes! But usually by the end of it I\'m excited for Spring. I hope you enjoy the Spring, too, ' + askNameAnswer + '!');
   // console.log('Yes! But usually by the end of it I\'m excited for Spring. I hope you enjoy the Spring, too, ' + askNameAnswer + '!');
 } else {
   alert('Yes! But usually by the end of it I\'m excited for Summer. I hope you enjoy the Summer, too, ' + askNameAnswer + '!');
