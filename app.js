@@ -47,45 +47,58 @@ var pizzaAnswer = prompt('Okay, '+ askNameAnswer + '. Does Matt like Pineapple o
 pizzaAnswer = pizzaAnswer.toLowerCase();
 
 if (pizzaAnswer === 'yes' || pizzaAnswer === 'y' || pizzaAnswer === 'yeah') {
-  console.log('ew, pineapples are gross');
+  alert('Ew, no, pineapples on pizza are gross.');
+  // console.log('Ew, pineapples are gross');
 } else {
-  console.log('correct, pineapples on pizza are gross');
+  alert('Correct, pineapples on pizza are gross');
+  // console.log('Correct, pineapples on pizza are gross');
 }
 
 var petAnswer = prompt('Does Matt have any pets?');
 petAnswer = petAnswer.toLowerCase();
 if (petAnswer === 'yes' || petAnswer === 'y' || petAnswer === 'yeah'){
-  console.log('I wish! My lease doesn\' allow pets :(');
+  alert('I wish! My lease doesn\' allow pets :(');
+  // console.log('I wish! My lease doesn\' allow pets :(');
 } else {
-  console.log('Correct :(');
+  alert('Correct :(');
+  // console.log('Correct :(');
 }
 
 var gamesAnswer = prompt('Does Matt enjoy playing games?');
 gamesAnswer = gamesAnswer.toLowerCase();
 if (gamesAnswer === 'yes' || gamesAnswer === 'y' || gamesAnswer === 'yeah'){
-  console.log('Absolutely!');
+  alert('Absolutely!');
+  // console.log('Absolutely!');
 } else {
-  console.log('What?! Of course I like games!');
+  alert('What?! Of course I like games!');
+  // console.log('What?! Of course I like games!');
 }
 
 var daysHaircutAnswer = prompt('How long (in days) has it been since Matt last had a harciut (usually I get a haircut every 28 days)?');
 daysHaircutAnswer = parseInt(daysHaircutAnswer);
 if (daysHaircutAnswer === 85){
-  console.log('Yes! How\'d you guess? It\'s been far too long!');
+  alert('Yes! How\'d you guess? It\'s been far too long!')
+  // console.log('Yes! How\'d you guess? It\'s been far too long!');
 } else if (daysHaircutAnswer < 85){
-  console.log('I wish! Longer!');
+  alert('I wish! Longer!');
+  // console.log('I wish! Longer!');
 } else {
-  console.log('You kidding? My hair would be way longer if it had been that long!');
+  alert('You kidding? My hair would be way longer if it had been that long!');
+  // console.log('You kidding? My hair would be way longer if it had been that long!');
 }
 
 var seasonPreferenceAnswer = prompt('Does Matt prefer Summer, Winter, Fall, or Spring?');
 seasonPreferenceAnswer = seasonPreferenceAnswer.toLowerCase();
 if (seasonPreferenceAnswer === 'summer'){
-  console.log('Yes! But usually by the end of it I\'m excited for Fall. I hope you enjoy the Fall, too, ' + askNameAnswer + '!');
+  alert('Yes! But usually by the end of it I\'m excited for Fall. I hope you enjoy the Fall, too, ' + askNameAnswer + '!')
+  // console.log('Yes! But usually by the end of it I\'m excited for Fall. I hope you enjoy the Fall, too, ' + askNameAnswer + '!');
 } else if (seasonPreferenceAnswer === 'fall'){
-  console.log('Yes! But usually by the end of it I\'m excited for Winter. I hope you enjoy the Winter, too, ' + askNameAnswer + '!');
+  alert('Yes! But usually by the end of it I\'m excited for Winter. I hope you enjoy the Winter, too, ' + askNameAnswer + '!')
+  // console.log('Yes! But usually by the end of it I\'m excited for Winter. I hope you enjoy the Winter, too, ' + askNameAnswer + '!');
 } else if (seasonPreferenceAnswer === 'winter'){
-  console.log('Yes! But usually by the end of it I\'m excited for Spring. I hope you enjoy the Spring, too, ' + askNameAnswer + '!');
+  alert('Yes! But usually by the end of it I\'m excited for Spring. I hope you enjoy the Spring, too, ' + askNameAnswer + '!')
+  // console.log('Yes! But usually by the end of it I\'m excited for Spring. I hope you enjoy the Spring, too, ' + askNameAnswer + '!');
 } else {
-  console.log('Yes! But usually by the end of it I\'m excited for Summer. I hope you enjoy the Summer, too, ' + askNameAnswer + '!');
+  alert('Yes! But usually by the end of it I\'m excited for Summer. I hope you enjoy the Summer, too, ' + askNameAnswer + '!');
+  // console.log('Yes! But usually by the end of it I\'m excited for Summer. I hope you enjoy the Summer, too, ' + askNameAnswer + '!');
 }
