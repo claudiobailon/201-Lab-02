@@ -1,0 +1,23 @@
+* {
+  background-color: rgb(38,38,38);
+  color:   #e4e4e4;
+}
+
+
+article {
+  width: 280px;
+  display: inline-block;
+  height: 300px;
+  text-align: center;
+  padding: 10px;
+  vertical-align:top;
+  background-color: #2f4f4f;
+}
+
+h2 {
+  background-color: #2f4f4f;
+}
+
+p{
+  background-color: #2f4f4f;
+}
