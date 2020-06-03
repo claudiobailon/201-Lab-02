@@ -24,7 +24,8 @@ article {
   vertical-align:top;
   background-color: #2f4f4f;
   border: 2px solid #e4e4e4;
-  
+  box-shadow: 0 0 4px 4px #777;
+  margin: auto 30px 30px 30px;
 }
 
 h2 {
@@ -43,6 +44,9 @@ li {
   border: 2px solid #e4e4e4;
 }
 
+h3 {
+  text-align: center;
+}
 a {
   background-color: #2f4f4f;
 }
