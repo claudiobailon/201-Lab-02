@@ -142,10 +142,12 @@ while(haircutAttempts < 4 && daysHaircutAnswer !== daysHaircut){
   alert('Actually, Matt hasn\'t had a haircut in 85 days!');
 }
 
+// question seven =====================================
+
 var favoriteCheeses = ['brie', 'aged cheddar', 'parmesan'];
 var cheeseGuess;
-var cheeseAttempts = 0;
-while(cheeseAttempts < 6 && (cheeseGuess !== favoriteCheeses[0] || cheeseGuess !== favoriteCheeses[1] || cheeseGuess !== favoriteCheeses[2])){
+var cheeseAttempts = 0;//brie === brie true, brie !== brie false
+while(cheeseAttempts < 6 && (cheeseGuess !== favoriteCheeses[0] && cheeseGuess !== favoriteCheeses[1] && cheeseGuess !== favoriteCheeses[2])){
   cheeseGuess = prompt('What is one of Matt\'s favorite kind of cheese?').toLowerCase();
   if (cheeseGuess === favoriteCheeses[0]){
     alert('Yep! I love ' + favoriteCheeses[0] + '!');
@@ -158,7 +160,10 @@ while(cheeseAttempts < 6 && (cheeseGuess !== favoriteCheeses[0] || cheeseGuess !
     answersCorrect++;
   } else{
     alert ('Nope! Try again!');
+    cheeseAttempts++;
   }
 } alert('My favorite kinds of cheese are ' + favoriteCheeses[0] + ', ' + favoriteCheeses[1] + ', and ' + favoriteCheeses[2] + '!');
 
+
+alert('Congratulations! You got ' + answersCorrect + ' questions about Matt right!');
 
