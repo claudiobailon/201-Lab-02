@@ -41,10 +41,9 @@ Does Matt prefer Summer, Winter, Fall, or Spring?
     Yes! But usually by the end of it I'm excited for Summer
 */
 
-var askNameAnswer = prompt('What is your name, visitor?');
-var answersCorrect = 0;
 // var pizzaAnswer = prompt('Okay, '+ askNameAnswer + '. Does Matt like Pineapple on pizza?').toLowerCase();
 // //  question one ============================
+
 // if (pizzaAnswer === 'yes' || pizzaAnswer === 'y' || pizzaAnswer === 'yeah') {
 //   alert('Ew, no, pineapples on pizza are gross.');
 //   // console.log('Ew, pineapples are gross');
@@ -117,6 +116,15 @@ var answersCorrect = 0;
 //   alert('You kidding? My hair would be way longer if it had been that long!');
 //   // console.log('You kidding? My hair would be way longer if it had been that long!');
 // }
+// ================================================================================================================================
+// the commented out content is still there just to show the work that I did on previous lab days. Normally I would just delete it.
+// ================================================================================================================================
+
+var askNameAnswer = prompt('What is your name, visitor?');
+var answersCorrect = 0;
+
+// question one through five
+
 var answerArray = ['Okay, ' + askNameAnswer + '. Does Matt like Pineapple on pizza?', 'n', 'no', 'nope', 'Correct, pineapples on pizza are gross', 'Ew, no, pineapples on pizza are gross.', 'Does Matt have any pets?', 'n', 'no', 'nope', 'Correct :(', 'I wish! My lease doesn\' allow pets :(', 'Does Matt enjoy playing games?', 'y', 'yes', 'yeah', 'Absolutely!', 'What?! Of course I like games!', 'Does Matt miss going to the movies?', 'y', 'yes', 'yeah', 'Yup, I\'m very bummed that I can\'t go to the movie theater.', 'Wrong! I never realized I would take movie theaters for granted.', 'Has Matt ever gone skydiving', 'n', 'no', 'nope', 'Correct. I do want to someday, though', 'I wish! Never had the opportunity. On my bucket list though.'];
 for(var index=0; index < 30; index = index +6){
   var answer = prompt(answerArray[index]).toLowerCase();
@@ -127,7 +135,9 @@ for(var index=0; index < 30; index = index +6){
     alert(answerArray[index+5]);
   }
 }
+
 // question six ======================================
+
 var haircutAttempts = 0;
 var daysHaircut = Math.floor(Math.random() * 100);
 console.log(daysHaircut);
@@ -174,8 +184,7 @@ while(cheeseAttempts < 6 && (cheeseGuess !== favoriteCheeses[0] && cheeseGuess !
 } alert('My favorite kinds of cheese are ' + favoriteCheeses[0] + ', ' + favoriteCheeses[1] + ', and ' + favoriteCheeses[2] + '!');
 
 if (answersCorrect > 0){
-  alert('you got ' + answersCorrect + ' right!');
+  alert('Congratulations, ' + askNameAnswer + ', you got ' + answersCorrect + ' right!');
 } else {
-  alert('Oh no! You got all the questions wrong!');
+  alert('Oh no, ' + askNameAnswer+ '! You got all the questions wrong!');
 }
-
