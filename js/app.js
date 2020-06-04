@@ -139,7 +139,7 @@ for(var index=0; index < 30; index = index +6){
 // question six ======================================
 
 var haircutAttempts = 0;
-var daysHaircut = Math.floor(Math.random() * 100);
+var daysHaircut = Math.floor(Math.random() * 100); // https://www.w3schools.com/js/js_random.asp
 console.log(daysHaircut);
 var daysHaircutAnswer;
 while(haircutAttempts < 4 && daysHaircutAnswer !== daysHaircut){
