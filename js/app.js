@@ -43,67 +43,67 @@ Does Matt prefer Summer, Winter, Fall, or Spring?
 
 var askNameAnswer = prompt('What is your name, visitor?');
 var answersCorrect = 0;
-var pizzaAnswer = prompt('Okay, '+ askNameAnswer + '. Does Matt like Pineapple on pizza?').toLowerCase();
-//  question one ============================
-if (pizzaAnswer === 'yes' || pizzaAnswer === 'y' || pizzaAnswer === 'yeah') {
-  alert('Ew, no, pineapples on pizza are gross.');
-  // console.log('Ew, pineapples are gross');
-} else {
-  alert('Correct, pineapples on pizza are gross');
-  // console.log('Correct, pineapples on pizza are gross');
-  answersCorrect++;
-}
-//  question two =============================
-var petAnswer = prompt('Does Matt have any pets?');
-petAnswer = petAnswer.toLowerCase();
-if (petAnswer === 'yes' || petAnswer === 'y' || petAnswer === 'yeah'){
-  alert('I wish! My lease doesn\' allow pets :(');
-  // console.log('I wish! My lease doesn\' allow pets :(');
-} else {
-  alert('Correct :(');
-  // console.log('Correct :(');
-  answersCorrect++;
-}
-//  question three ===========================
-var gamesAnswer = prompt('Does Matt enjoy playing games?');
-gamesAnswer = gamesAnswer.toLowerCase();
-if (gamesAnswer === 'yes' || gamesAnswer === 'y' || gamesAnswer === 'yeah'){
-  alert('Absolutely!');
-  // console.log('Absolutely!');
-  answersCorrect++;
-} else {
-  alert('What?! Of course I like games!');
-  // console.log('What?! Of course I like games!');
-}
-// question four =================================
-var askMovieAnswer = prompt('Does Matt miss going to the movies?').toLowerCase();
-if (askMovieAnswer === 'yes' || askMovieAnswer === 'y' || askMovieAnswer === 'yeah'){
-  alert('Yup, I\'m very bummed that I can\'t go to the movie theater.');
-  answersCorrect++;
-} else {
-  alert('Wrong! I never realized I would take movie theaters for granted.');
-}
+// var pizzaAnswer = prompt('Okay, '+ askNameAnswer + '. Does Matt like Pineapple on pizza?').toLowerCase();
+// //  question one ============================
+// if (pizzaAnswer === 'yes' || pizzaAnswer === 'y' || pizzaAnswer === 'yeah') {
+//   alert('Ew, no, pineapples on pizza are gross.');
+//   // console.log('Ew, pineapples are gross');
+// } else {
+//   alert('Correct, pineapples on pizza are gross');
+//   // console.log('Correct, pineapples on pizza are gross');
+//   answersCorrect++;
+// }
+// //  question two =============================
+// var petAnswer = prompt('Does Matt have any pets?');
+// petAnswer = petAnswer.toLowerCase();
+// if (petAnswer === 'yes' || petAnswer === 'y' || petAnswer === 'yeah'){
+//   alert('I wish! My lease doesn\' allow pets :(');
+//   // console.log('I wish! My lease doesn\' allow pets :(');
+// } else {
+//   alert('Correct :(');
+//   // console.log('Correct :(');
+//   answersCorrect++;
+// }
+// //  question three ===========================
+// var gamesAnswer = prompt('Does Matt enjoy playing games?');
+// gamesAnswer = gamesAnswer.toLowerCase();
+// if (gamesAnswer === 'yes' || gamesAnswer === 'y' || gamesAnswer === 'yeah'){
+//   alert('Absolutely!');
+//   // console.log('Absolutely!');
+//   answersCorrect++;
+// } else {
+//   alert('What?! Of course I like games!');
+//   // console.log('What?! Of course I like games!');
+// }
+// // question four =================================
+// var askMovieAnswer = prompt('Does Matt miss going to the movies?').toLowerCase();
+// if (askMovieAnswer === 'yes' || askMovieAnswer === 'y' || askMovieAnswer === 'yeah'){
+//   alert('Yup, I\'m very bummed that I can\'t go to the movie theater.');
+//   answersCorrect++;
+// } else {
+//   alert('Wrong! I never realized I would take movie theaters for granted.');
+// }
 
 
-// quesiton five ==============================
-var seasonPreferenceAnswer = prompt('Does Matt prefer Summer, Winter, Fall, or Spring?').toLowerCase();
-if (seasonPreferenceAnswer === 'summer'){
-  alert('Yes! But usually by the end of it I\'m excited for Fall. I hope you enjoy the Fall, too, ' + askNameAnswer + '!');
-  answersCorrect++;
-  // console.log('Yes! But usually by the end of it I\'m excited for Fall. I hope you enjoy the Fall, too, ' + askNameAnswer + '!');
-} else if (seasonPreferenceAnswer === 'fall'){
-  alert('Yes! But usually by the end of it I\'m excited for Winter. I hope you enjoy the Winter, too, ' + askNameAnswer + '!');
-  answersCorrect++;
-  // console.log('Yes! But usually by the end of it I\'m excited for Winter. I hope you enjoy the Winter, too, ' + askNameAnswer + '!');
-} else if (seasonPreferenceAnswer === 'winter'){
-  alert('Yes! But usually by the end of it I\'m excited for Spring. I hope you enjoy the Spring, too, ' + askNameAnswer + '!');
-  answersCorrect++;
-  // console.log('Yes! But usually by the end of it I\'m excited for Spring. I hope you enjoy the Spring, too, ' + askNameAnswer + '!');
-} else {
-  alert('Yes! But usually by the end of it I\'m excited for Summer. I hope you enjoy the Summer, too, ' + askNameAnswer + '!');
-  answersCorrect++;
-  // console.log('Yes! But usually by the end of it I\'m excited for Summer. I hope you enjoy the Summer, too, ' + askNameAnswer + '!');
-}
+// // quesiton five ==============================
+// var seasonPreferenceAnswer = prompt('Does Matt prefer Summer, Winter, Fall, or Spring?').toLowerCase();
+// if (seasonPreferenceAnswer === 'summer'){
+//   alert('Yes! But usually by the end of it I\'m excited for Fall. I hope you enjoy the Fall, too, ' + askNameAnswer + '!');
+//   answersCorrect++;
+//   // console.log('Yes! But usually by the end of it I\'m excited for Fall. I hope you enjoy the Fall, too, ' + askNameAnswer + '!');
+// } else if (seasonPreferenceAnswer === 'fall'){
+//   alert('Yes! But usually by the end of it I\'m excited for Winter. I hope you enjoy the Winter, too, ' + askNameAnswer + '!');
+//   answersCorrect++;
+//   // console.log('Yes! But usually by the end of it I\'m excited for Winter. I hope you enjoy the Winter, too, ' + askNameAnswer + '!');
+// } else if (seasonPreferenceAnswer === 'winter'){
+//   alert('Yes! But usually by the end of it I\'m excited for Spring. I hope you enjoy the Spring, too, ' + askNameAnswer + '!');
+//   answersCorrect++;
+//   // console.log('Yes! But usually by the end of it I\'m excited for Spring. I hope you enjoy the Spring, too, ' + askNameAnswer + '!');
+// } else {
+//   alert('Yes! But usually by the end of it I\'m excited for Summer. I hope you enjoy the Summer, too, ' + askNameAnswer + '!');
+//   answersCorrect++;
+//   // console.log('Yes! But usually by the end of it I\'m excited for Summer. I hope you enjoy the Summer, too, ' + askNameAnswer + '!');
+// }
 
 // var daysHaircutAnswer = prompt('How long (in days) has it been since Matt last had a harciut (usually I get a haircut every 28 days)?');
 // daysHaircutAnswer = parseInt(daysHaircutAnswer);
@@ -117,29 +117,39 @@ if (seasonPreferenceAnswer === 'summer'){
 //   alert('You kidding? My hair would be way longer if it had been that long!');
 //   // console.log('You kidding? My hair would be way longer if it had been that long!');
 // }
-
+var answerArray = ['Okay, ' + askNameAnswer + '. Does Matt like Pineapple on pizza?', 'n', 'no', 'nope', 'Correct, pineapples on pizza are gross', 'Ew, no, pineapples on pizza are gross.', 'Does Matt have any pets?', 'n', 'no', 'nope', 'Correct :(', 'I wish! My lease doesn\' allow pets :(', 'Does Matt enjoy playing games?', 'y', 'yes', 'yeah', 'Absolutely!', 'What?! Of course I like games!', 'Does Matt miss going to the movies?', 'y', 'yes', 'yeah', 'Yup, I\'m very bummed that I can\'t go to the movie theater.', 'Wrong! I never realized I would take movie theaters for granted.', 'Has Matt ever gone skydiving', 'n', 'no', 'nope', 'Correct. I do want to someday, though', 'I wish! Never had the opportunity. On my bucket list though.'];
+for(var index=0; index < 30; index = index +6){
+  var answer = prompt(answerArray[index]).toLowerCase();
+  if (answer === (answerArray[index+1] || answerArray[index+2] || answerArray[index+3])){
+    alert(answerArray[index+4]);
+    answersCorrect++;
+  } else {
+    alert(answerArray[index+5]);
+  }
+}
 // question six ======================================
 var haircutAttempts = 0;
-var daysHaircut = 85;
+var daysHaircut = Math.floor(Math.random() * 100);
+console.log(daysHaircut);
 var daysHaircutAnswer;
 while(haircutAttempts < 4 && daysHaircutAnswer !== daysHaircut){
   daysHaircutAnswer = prompt('How long (in days) has it been since Matt last had a harciut (usually I get a haircut every 28 days)?');
   daysHaircutAnswer = parseInt(daysHaircutAnswer);
-  if (daysHaircutAnswer < 85){
+  if (daysHaircutAnswer < daysHaircut){
     alert('I wish! Longer!');
-  } else if (daysHaircutAnswer > 85){
+  } else if (daysHaircutAnswer > daysHaircut){
     alert('You kidding? My hair would be way longer if it had been that long!');
-  } else if (daysHaircutAnswer === 85){
+  } else if (daysHaircutAnswer === daysHaircut){
     alert('Yes! How\'d you guess? It\'s been far too long!');
     answersCorrect++;
   } else {
     alert('Please enter a number!');
   }
   haircutAttempts++;
-  console.log(haircutAttempts);
+
 
 } if(haircutAttempts === 4 && daysHaircutAnswer !== daysHaircut){
-  alert('Actually, Matt hasn\'t had a haircut in 85 days!');
+  alert('Actually, Matt hasn\'t had a haircut in ' + daysHaircut+ ' days!');
 }
 
 // question seven =====================================
@@ -164,6 +174,9 @@ while(cheeseAttempts < 6 && (cheeseGuess !== favoriteCheeses[0] && cheeseGuess !
   }
 } alert('My favorite kinds of cheese are ' + favoriteCheeses[0] + ', ' + favoriteCheeses[1] + ', and ' + favoriteCheeses[2] + '!');
 
-
-alert('Congratulations! You got ' + answersCorrect + ' questions about Matt right!');
+if (answersCorrect > 0){
+  alert('you got ' + answersCorrect + ' right!');
+} else {
+  alert('Oh no! You got all the questions wrong!');
+}
 
