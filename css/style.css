@@ -50,3 +50,48 @@ h3 {
 a {
   background-color: #2f4f4f;
 }
+
+.worklist {
+  width: 500px;
+}
+.travellist {
+  width: 500px;
+  height: 380px;
+  text-align: center;
+  width:300px;
+  display:block;
+  margin: auto;
+}
+ol {
+  background-color: #2f4f4f;
+  padding:0;
+
+}
+.travellist>h2{
+  width:250px;
+  text-align: center;
+  margin: auto;
+
+
+}
+ol>li {
+  display: block;
+  text-align: center;
+  border: 0;
+  font-size: large;
+  font-weight: bold;
+  padding: 5px;
+}
+
+article>ul{
+  background-color: #2f4f4f;
+  padding: 0;
+  text-align: left;
+
+}
+article>ul>li{
+  min-width: 480px;
+  text-align: left;
+  border: 0px;
+  
+}
