@@ -133,7 +133,7 @@ var daysHaircut = Math.floor(Math.random() * 100);
 console.log(daysHaircut);
 var daysHaircutAnswer;
 while(haircutAttempts < 4 && daysHaircutAnswer !== daysHaircut){
-  daysHaircutAnswer = prompt('How long (in days) has it been since Matt last had a harciut (usually I get a haircut every 28 days)?');
+  daysHaircutAnswer = prompt('How long (in days) has it been since Matt last had a harciut (usually I get a haircut every 28 days)? You have ' + (4-haircutAttempts) + ' attempts remaining.'); // credit to Courtney for giving me the idea to implement a counter for attempts.
   daysHaircutAnswer = parseInt(daysHaircutAnswer);
   if (daysHaircutAnswer < daysHaircut){
     alert('I wish! Longer!');
@@ -147,9 +147,8 @@ while(haircutAttempts < 4 && daysHaircutAnswer !== daysHaircut){
   }
   haircutAttempts++;
 
-
 } if(haircutAttempts === 4 && daysHaircutAnswer !== daysHaircut){
-  alert('Actually, Matt hasn\'t had a haircut in ' + daysHaircut+ ' days!');
+  alert('Actually, Matt hasn\'t had a haircut in ' + daysHaircut + ' days!');
 }
 
 // question seven =====================================
@@ -158,7 +157,7 @@ var favoriteCheeses = ['brie', 'aged cheddar', 'parmesan'];
 var cheeseGuess;
 var cheeseAttempts = 0;//brie === brie true, brie !== brie false
 while(cheeseAttempts < 6 && (cheeseGuess !== favoriteCheeses[0] && cheeseGuess !== favoriteCheeses[1] && cheeseGuess !== favoriteCheeses[2])){
-  cheeseGuess = prompt('What is one of Matt\'s favorite kind of cheese?').toLowerCase();
+  cheeseGuess = prompt('What is one of Matt\'s favorite kind of cheese? You have ' + (6-cheeseAttempts) + ' attempts remaining.').toLowerCase();
   if (cheeseGuess === favoriteCheeses[0]){
     alert('Yep! I love ' + favoriteCheeses[0] + '!');
     answersCorrect++;
