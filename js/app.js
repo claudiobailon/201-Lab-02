@@ -142,28 +142,34 @@ firstFiveQuestions();
 
 // question six ======================================
 
-var haircutAttempts = 0;
-var daysHaircut = Math.floor(Math.random() * 100); // https://www.w3schools.com/js/js_random.asp
-console.log(daysHaircut);
-var daysHaircutAnswer;
-while(haircutAttempts < 4 && daysHaircutAnswer !== daysHaircut){
-  daysHaircutAnswer = prompt('How long (in days) has it been since Matt last had a harciut (usually I get a haircut every 28 days)? You have ' + (4-haircutAttempts) + ' attempts remaining.'); // credit to Courtney for giving me the idea to implement a counter for attempts.
-  daysHaircutAnswer = parseInt(daysHaircutAnswer);
-  if (daysHaircutAnswer < daysHaircut){
-    alert('I wish! Longer!');
-  } else if (daysHaircutAnswer > daysHaircut){
-    alert('You kidding? My hair would be way longer if it had been that long!');
-  } else if (daysHaircutAnswer === daysHaircut){
-    alert('Yes! How\'d you guess? It\'s been far too long!');
-    answersCorrect++;
-  } else {
-    alert('Please enter a number!');
+function haircutQuestion(){
+  
+  
+  var haircutAttempts = 0;
+  var daysHaircut = Math.floor(Math.random() * 100); // https://www.w3schools.com/js/js_random.asp
+  console.log(daysHaircut);
+  var daysHaircutAnswer;
+  while(haircutAttempts < 4 && daysHaircutAnswer !== daysHaircut){
+    daysHaircutAnswer = prompt('How long (in days) has it been since Matt last had a harciut (usually I get a haircut every 28 days)? You have ' + (4-haircutAttempts) + ' attempts remaining.'); // credit to Courtney for giving me the idea to implement a counter for attempts.
+    daysHaircutAnswer = parseInt(daysHaircutAnswer);
+    if (daysHaircutAnswer < daysHaircut){
+      alert('I wish! Longer!');
+    } else if (daysHaircutAnswer > daysHaircut){
+      alert('You kidding? My hair would be way longer if it had been that long!');
+    } else if (daysHaircutAnswer === daysHaircut){
+      alert('Yes! How\'d you guess? It\'s been far too long!');
+      answersCorrect++;
+    } else {
+      alert('Please enter a number!');
+    }
+    haircutAttempts++;
+    
+  } if(haircutAttempts === 4 && daysHaircutAnswer !== daysHaircut){
+    alert('Actually, Matt hasn\'t had a haircut in ' + daysHaircut + ' days!');
   }
-  haircutAttempts++;
-
-} if(haircutAttempts === 4 && daysHaircutAnswer !== daysHaircut){
-  alert('Actually, Matt hasn\'t had a haircut in ' + daysHaircut + ' days!');
 }
+
+haircutQuestion();
 
 // question seven =====================================
 
