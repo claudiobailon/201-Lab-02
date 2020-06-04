@@ -127,7 +127,7 @@ var answersCorrect = 0;
 function firstFiveQuestions(){ 
 
   var answerArray = ['Okay, ' + askNameAnswer + '. Does Matt like Pineapple on pizza?', 'n', 'no', 'nope', 'Correct, pineapples on pizza are gross', 'Ew, no, pineapples on pizza are gross.', 'Does Matt have any pets?', 'n', 'no', 'nope', 'Correct :(', 'I wish! My lease doesn\' allow pets :(', 'Does Matt enjoy playing games?', 'y', 'yes', 'yeah', 'Absolutely!', 'What?! Of course I like games!', 'Does Matt miss going to the movies?', 'y', 'yes', 'yeah', 'Yup, I\'m very bummed that I can\'t go to the movie theater.', 'Wrong! I never realized I would take movie theaters for granted.', 'Has Matt ever gone skydiving', 'n', 'no', 'nope', 'Correct. I do want to someday, though', 'I wish! Never had the opportunity. On my bucket list though.'];
-  for(var index=0; index < 30; index = index +6){
+  for(var index=0; index < answerArray.length; index = index +6){
     var answer = prompt(answerArray[index]).toLowerCase();
     if (answer === (answerArray[index+1] || answerArray[index+2] || answerArray[index+3])){
       alert(answerArray[index+4]);
@@ -138,7 +138,7 @@ function firstFiveQuestions(){
   }
   
 }
-firstFiveQuestions();
+// firstFiveQuestions();
 
 // question six ======================================
 
@@ -169,16 +169,16 @@ function haircutQuestion(){
   }
 }
 
-haircutQuestion();
+// haircutQuestion();
 
 // question seven =====================================
+var favoriteCheeses = ['brie', 'aged cheddar', 'parmesan'];
+var cheeseGuess;
+var cheeseAttempts = 0;
 
 function cheeseQuestion(){
   
   
-  var favoriteCheeses = ['brie', 'aged cheddar', 'parmesan'];
-  var cheeseGuess;
-  var cheeseAttempts = 0;
   while(cheeseAttempts < 6 && (cheeseGuess !== favoriteCheeses[0] && cheeseGuess !== favoriteCheeses[1] && cheeseGuess !== favoriteCheeses[2])){
     cheeseGuess = prompt('What is one of Matt\'s favorite kind of cheese? You have ' + (6-cheeseAttempts) + ' attempts remaining.').toLowerCase();
     if (cheeseGuess === favoriteCheeses[0]){
@@ -199,6 +199,29 @@ function cheeseQuestion(){
 }
 
 cheeseQuestion();
+
+// for(cheeseAttempts = 0; cheeseAttempts < 6; cheeseAttempts++){
+//   cheeseGuess = prompt('What is one of Matt\'s favorite kind of cheese? You have ' + (6-cheeseAttempts) + ' attempts remaining.').toLowerCase();
+//   for(var i_= 0; i < favoriteCheeses.length; i++){
+    
+//     if(cheeseGuess === favoriteCheeses[i]){
+      
+//       alert('Yep! I love ' + favoriteCheeses[i] + '!');
+//       answersCorrect++;
+//       break;
+//     }
+    
+    
+//   }
+//   alert ('Nope! Try again!');
+// }alert('My favorite kinds of cheese are ' + favoriteCheeses[0] + ', ' + favoriteCheeses[1] + ', and ' + favoriteCheeses[2] + '!');
+
+
+
+
+
+
+
 
   if (answersCorrect > 0){
     alert('Congratulations, ' + askNameAnswer + ', you got ' + answersCorrect + ' right!');
