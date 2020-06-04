@@ -173,28 +173,36 @@ haircutQuestion();
 
 // question seven =====================================
 
-var favoriteCheeses = ['brie', 'aged cheddar', 'parmesan'];
-var cheeseGuess;
-var cheeseAttempts = 0;
-while(cheeseAttempts < 6 && (cheeseGuess !== favoriteCheeses[0] && cheeseGuess !== favoriteCheeses[1] && cheeseGuess !== favoriteCheeses[2])){
-  cheeseGuess = prompt('What is one of Matt\'s favorite kind of cheese? You have ' + (6-cheeseAttempts) + ' attempts remaining.').toLowerCase();
-  if (cheeseGuess === favoriteCheeses[0]){
-    alert('Yep! I love ' + favoriteCheeses[0] + '!');
-    answersCorrect++;
-  } else if (cheeseGuess === favoriteCheeses[1]){
-    alert ('Yep! I love ' + favoriteCheeses[1] + '!');
-    answersCorrect++;
-  } else if (cheeseGuess === favoriteCheeses[2]){
-    alert ('Yep! I love ' + favoriteCheeses[2] + '!');
-    answersCorrect++;
-  } else{
-    alert ('Nope! Try again!');
-    cheeseAttempts++;
-  }
-} alert('My favorite kinds of cheese are ' + favoriteCheeses[0] + ', ' + favoriteCheeses[1] + ', and ' + favoriteCheeses[2] + '!');
-
-if (answersCorrect > 0){
-  alert('Congratulations, ' + askNameAnswer + ', you got ' + answersCorrect + ' right!');
-} else {
-  alert('Oh no, ' + askNameAnswer+ '! You got all the questions wrong!');
+function cheeseQuestion(){
+  
+  
+  var favoriteCheeses = ['brie', 'aged cheddar', 'parmesan'];
+  var cheeseGuess;
+  var cheeseAttempts = 0;
+  while(cheeseAttempts < 6 && (cheeseGuess !== favoriteCheeses[0] && cheeseGuess !== favoriteCheeses[1] && cheeseGuess !== favoriteCheeses[2])){
+    cheeseGuess = prompt('What is one of Matt\'s favorite kind of cheese? You have ' + (6-cheeseAttempts) + ' attempts remaining.').toLowerCase();
+    if (cheeseGuess === favoriteCheeses[0]){
+      alert('Yep! I love ' + favoriteCheeses[0] + '!');
+      answersCorrect++;
+    } else if (cheeseGuess === favoriteCheeses[1]){
+      alert ('Yep! I love ' + favoriteCheeses[1] + '!');
+      answersCorrect++;
+    } else if (cheeseGuess === favoriteCheeses[2]){
+      alert ('Yep! I love ' + favoriteCheeses[2] + '!');
+      answersCorrect++;
+    } else{
+      alert ('Nope! Try again!');
+      cheeseAttempts++;
+    }
+  } alert('My favorite kinds of cheese are ' + favoriteCheeses[0] + ', ' + favoriteCheeses[1] + ', and ' + favoriteCheeses[2] + '!');
+  
 }
+
+cheeseQuestion();
+
+  if (answersCorrect > 0){
+    alert('Congratulations, ' + askNameAnswer + ', you got ' + answersCorrect + ' right!');
+  } else {
+    alert('Oh no, ' + askNameAnswer+ '! You got all the questions wrong!');
+  }
+  
