@@ -165,7 +165,7 @@ while(haircutAttempts < 4 && daysHaircutAnswer !== daysHaircut){
 
 var favoriteCheeses = ['brie', 'aged cheddar', 'parmesan'];
 var cheeseGuess;
-var cheeseAttempts = 0;//brie === brie true, brie !== brie false
+var cheeseAttempts = 0;
 while(cheeseAttempts < 6 && (cheeseGuess !== favoriteCheeses[0] && cheeseGuess !== favoriteCheeses[1] && cheeseGuess !== favoriteCheeses[2])){
   cheeseGuess = prompt('What is one of Matt\'s favorite kind of cheese? You have ' + (6-cheeseAttempts) + ' attempts remaining.').toLowerCase();
   if (cheeseGuess === favoriteCheeses[0]){
