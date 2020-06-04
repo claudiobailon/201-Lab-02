@@ -124,17 +124,21 @@ var askNameAnswer = prompt('What is your name, visitor?');
 var answersCorrect = 0;
 
 // question one through five
+function firstFiveQuestions(){ 
 
-var answerArray = ['Okay, ' + askNameAnswer + '. Does Matt like Pineapple on pizza?', 'n', 'no', 'nope', 'Correct, pineapples on pizza are gross', 'Ew, no, pineapples on pizza are gross.', 'Does Matt have any pets?', 'n', 'no', 'nope', 'Correct :(', 'I wish! My lease doesn\' allow pets :(', 'Does Matt enjoy playing games?', 'y', 'yes', 'yeah', 'Absolutely!', 'What?! Of course I like games!', 'Does Matt miss going to the movies?', 'y', 'yes', 'yeah', 'Yup, I\'m very bummed that I can\'t go to the movie theater.', 'Wrong! I never realized I would take movie theaters for granted.', 'Has Matt ever gone skydiving', 'n', 'no', 'nope', 'Correct. I do want to someday, though', 'I wish! Never had the opportunity. On my bucket list though.'];
-for(var index=0; index < 30; index = index +6){
-  var answer = prompt(answerArray[index]).toLowerCase();
-  if (answer === (answerArray[index+1] || answerArray[index+2] || answerArray[index+3])){
-    alert(answerArray[index+4]);
-    answersCorrect++;
-  } else {
-    alert(answerArray[index+5]);
+  var answerArray = ['Okay, ' + askNameAnswer + '. Does Matt like Pineapple on pizza?', 'n', 'no', 'nope', 'Correct, pineapples on pizza are gross', 'Ew, no, pineapples on pizza are gross.', 'Does Matt have any pets?', 'n', 'no', 'nope', 'Correct :(', 'I wish! My lease doesn\' allow pets :(', 'Does Matt enjoy playing games?', 'y', 'yes', 'yeah', 'Absolutely!', 'What?! Of course I like games!', 'Does Matt miss going to the movies?', 'y', 'yes', 'yeah', 'Yup, I\'m very bummed that I can\'t go to the movie theater.', 'Wrong! I never realized I would take movie theaters for granted.', 'Has Matt ever gone skydiving', 'n', 'no', 'nope', 'Correct. I do want to someday, though', 'I wish! Never had the opportunity. On my bucket list though.'];
+  for(var index=0; index < 30; index = index +6){
+    var answer = prompt(answerArray[index]).toLowerCase();
+    if (answer === (answerArray[index+1] || answerArray[index+2] || answerArray[index+3])){
+      alert(answerArray[index+4]);
+      answersCorrect++;
+    } else {
+      alert(answerArray[index+5]);
+    }
   }
+  
 }
+firstFiveQuestions();
 
 // question six ======================================
 
